@@ -52,13 +52,13 @@ binarySearchTreeMethods.contains = function(target) {
       return false;
     } else {
       //else run recursion on that child
-      this.right.contains(target);
+      return this.right.contains(target);
     }
   } else if (target < this.value) {
     if (this.left === null) {
       return false;
     } else {
-      this.left.contains(target);
+      return this.left.contains(target);
     }
   }
 };
